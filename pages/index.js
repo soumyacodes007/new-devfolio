@@ -15,3 +15,9 @@ useEffect(() => {
   
   fetchHackathons();
 }, []); 
+
+
+const cors = require('cors');
+app.use(cors({
+  origin: 'https://new-devfolio.vercel.app/' // Your Vercel domain
+}));
